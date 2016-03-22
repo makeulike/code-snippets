@@ -23,7 +23,7 @@ $(window).resize(function() {
 ## Youtube API Use
 ```JavaScript
 /**
- * Youtube background
+ * Youtube API
  */
 var tmpPlayer;
 
