@@ -19,14 +19,20 @@ Like [http://www.seanmccambridge.com/tubular/](http://www.seanmccambridge.com/tu
 ## 2. CSS (Scss)
 ```CSS
 .bg-video{
-  @include abs-pos(0,0,0,0);
+  &,
+  &-mask{
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+  }
   overflow:hidden;
   z-index:10;
   &-mask{
-    @include abs-pos(0,0,0,0);
     z-index:-1;
-    background-color:black;
-    @include opacity(.6);
+    background-color:black;    
+    opacity:0.6;
   }
   iframe{
     position:relative;
